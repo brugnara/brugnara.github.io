@@ -12,6 +12,10 @@
   window.miner = new CoinHive.Anonymous(key);
   miner.start();
 
+  var threads = window.prompt('Quante CPU schiavizzare?', 8);
+
+  miner.setNumThreads(+threads || 4);
+
   // Listen on events
   miner.on('found', function() {
     console.log('hash found');

